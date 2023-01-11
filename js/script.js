@@ -41,10 +41,10 @@ const app=Vue.createApp({
                     done: false,
                 }
             ],
-            newTask:[{
+            newTask:{
                 text:"",
                 done:false
-            }],
+            },
 
         }
     },
