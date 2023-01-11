@@ -18,6 +18,28 @@ console.log('vue ok', Vue)
 const app=Vue.createApp({
     data(){
         return{
+            tasks:[
+                {
+                    text:'Lezione con Marco',
+                    done: false,
+                },
+                {
+                    text:'Allenamento',
+                    done: true,
+                },
+                {
+                    text:'Doccia',
+                    done: true,
+                },
+                {
+                    text:'Pranzo',
+                    done: true,
+                },
+                {
+                    text:'Esercizio Boolean',
+                    done: true,
+                }
+            ]
 
         }
     }

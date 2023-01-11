@@ -17,11 +17,15 @@
         <div class="container">
             <header class="my-2">
                 <figure class="w-25 mx-auto">
-                    <img class="img-fluid" src="img/boolean-logo.png" alt="Logo Boolean">
+                    <img class="img-fluid mb-5" src="img/boolean-logo.png" alt="Logo Boolean">
                 </figure>
             </header>   
             <main>
-                
+                <h2 class="text-center h1">Cose da fare</h2>
+                <ul class="list-group w-50 mx-auto m-5">
+                    <li v-for="task in tasks " class="list-group-item d-flex justify-content-between">{{task['text']}} <button type="button" class="btn-close" aria-label="Close"></button></li>
+                    
+                  </ul>
             </main>
         </div>
     </div>
