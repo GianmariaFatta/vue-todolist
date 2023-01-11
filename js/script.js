@@ -40,13 +40,21 @@ const app=Vue.createApp({
                     text:'Esercizio Boolean',
                     done: false,
                 }
-            ]
+            ],
+            newTask:[{
+                text:"",
+                done:false
+            }],
 
         }
     },
     methods:{
         deleteTask(index){
             this.tasks.splice(index, 1);
+        },
+
+        addNewTask(){
+            this.tasks.push(this.newTask);
         }
      }
 });
