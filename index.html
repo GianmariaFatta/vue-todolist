@@ -23,7 +23,7 @@
             <main>
                 <h2 class="text-center h1">Cose da fare</h2>
                 <ul class="list-group w-50 mx-auto m-5">
-                    <li v-for="task in tasks " class="list-group-item d-flex justify-content-between">{{task['text']}} <button type="button" class="btn-close" aria-label="Close"></button></li>
+                    <li v-for="(task, i) in tasks " class="list-group-item d-flex justify-content-between">{{task['text']}} <button type="button" class="btn-close" aria-label="Close" @click="deleteTask(i)"></button></li>
                     
                   </ul>
             </main>

@@ -18,31 +18,37 @@ console.log('vue ok', Vue)
 const app=Vue.createApp({
     data(){
         return{
+            lineThrough:[''],
             tasks:[
                 {
                     text:'Lezione con Marco',
-                    done: false,
+                    done: true,
                 },
                 {
                     text:'Allenamento',
-                    done: true,
+                    done: false,
                 },
                 {
                     text:'Doccia',
-                    done: true,
+                    done: false,
                 },
                 {
                     text:'Pranzo',
-                    done: true,
+                    done: false,
                 },
                 {
                     text:'Esercizio Boolean',
-                    done: true,
+                    done: false,
                 }
             ]
 
         }
-    }
+    },
+    methods:{
+        deleteTask(index){
+            this.tasks.splice(index, 1);
+        }
+     }
 });
 
 app.mount('#root')
