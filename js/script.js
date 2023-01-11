@@ -41,10 +41,8 @@ const app=Vue.createApp({
                     done: false,
                 }
             ],
-            newTask:{
-                text:"",
-                done:false
-            },
+            newTask:""
+               
 
         }
     },
@@ -54,7 +52,13 @@ const app=Vue.createApp({
         },
 
         addNewTask(){
-            this.tasks.push(this.newTask);
+            const newTask={
+                text:this.newTask,
+                done:false
+            }
+
+            this.tasks.push(newTask);
+            this.newTask=""
         }
      }
 });
