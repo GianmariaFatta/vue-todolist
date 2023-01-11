@@ -52,13 +52,15 @@ const app=Vue.createApp({
         },
 
         addNewTask(){
+            if(this.newTask){ 
             const newTask={
                 text:this.newTask,
                 done:false
             }
-
             this.tasks.push(newTask);
             this.newTask=""
+        }
+
         }
      }
 });
