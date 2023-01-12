@@ -38,7 +38,7 @@ const app=Vue.createApp({
                 },
                 {
                     text:'Esercizio Boolean',
-                    done: false,
+                    done: true,
                 }
             ],
             newTask:""
@@ -61,7 +61,9 @@ const app=Vue.createApp({
             this.newTask=""
         }
 
-        }
+        },
+    
+    
      }
 });
 
